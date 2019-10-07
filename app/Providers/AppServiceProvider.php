@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Adapter\JsonFileCreatorAdapter;
 use App\Factory\TrainingEntryFactory;
 use App\Factory\TrainingEntryFactoryInterface;
 use App\FileDownloader\FileDownloader;
@@ -34,7 +35,7 @@ class AppServiceProvider extends ServiceProvider
 
         $this->app->bind(FileDownloader::class, TextFileDownloader::class);
         $this->app->bind(ReportProvider::class, SecurityTrainingReportProvider::class);
-        $this->app->bind(SecurityTrainingReportGenerator::class, SecurityTrainingCsvReportGenerator::class);
+        $this->app->bind(SecurityTrainingReportGenerator::class, JsonFileCreatorAdapter::class);
     }
 
     /**
