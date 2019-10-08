@@ -47,7 +47,10 @@
             </table>
         </div>
         <div class="form-wrapper">
-            <a href="{{ route('download_security_training_results.show') }}">
+            <a href="/">
+                &laquo; Go back
+            </a>
+            <a class="btn pull-right" href="{{ route('download_security_training_results.show') }}">
                 Download the Results
             </a>
         </div>
