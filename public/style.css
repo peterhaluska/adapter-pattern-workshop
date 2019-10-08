@@ -50,6 +50,14 @@ html, body {
     width: 960px;
 }
 
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
 table {
     border-collapse:collapse;
     width: 100%;
@@ -78,21 +86,22 @@ div.form-wrapper {
     padding: 15px 0;
 }
 
-div.form-wrapper a {
+a.btn {
     background: #646464;
     border: none;
     color: #fff;
     cursor: pointer;
-    float: right;
+    display: inline-block;
     font-size: 14px;
+    margin: 10px 0;
     outline: 0;
     padding: 10px 15px;
     text-decoration: none;
     text-transform: uppercase;
-    transition: all 0.3s ease;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
-div.form-wrapper a:hover {
+a.btn:hover {
     background: #aaaaaa;
     color: #000;
 }
