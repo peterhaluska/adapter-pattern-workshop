@@ -105,3 +105,10 @@ a.btn:hover {
     background: #aaaaaa;
     color: #000;
 }
+
+p.hint {
+    color: #828282;
+    font-size: 14px;
+    font-style: italic;
+    padding: 10px 0;
+}
