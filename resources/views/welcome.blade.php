@@ -41,10 +41,13 @@
                         attended_at and grade attributes.
                     </p>
                     <p>
-                        Luckily, there exists a nice 3rd party library called <strong>JsonFileCreator</strong> which help us creating JSON files.
+                        Luckily, there exists a nice 3rd party library called <strong>JsonFileCreator</strong> which helps us creating JSON files.
                     </p>
                     <p>
                         <strong>The goal is to implement the Adapter pattern, to be able to generate reports in JSON format.</strong>
+                    </p>
+                    <p class="hint">
+                            Hint: The controller responsible for Report downloads is <strong>DownloadSecurityTrainingResultController</strong>.
                     </p>
                 </div>
                 <div>
